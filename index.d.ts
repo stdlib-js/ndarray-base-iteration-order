@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,16 +16,27 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { ArrayLike } from '@stdlib/types/array';
 
 /**
-* Given a stride array, determine array iteration order.
+* Returns array iteration order.
 *
-* @module @stdlib/ndarray-base-iteration-order
+* ## Notes
+*
+* -   Return value key:
+*
+*     -   `0`: unordered (i.e., strides of mixed sign; e.g., `[ 9, -3, 1 ]`)
+*     -   `1`: ordered left-to-right (i.e., all nonnegative strides)
+*     -   `-1`: ordered right-to-left (i.e., all negative strides)
+*
+* @param strides - stride array
+* @returns iteration order
 *
 * @example
-* var iterationOrder = require( '@stdlib/ndarray-base-iteration-order' );
-*
 * var o = iterationOrder( [ 2, 1 ] );
 * // returns 1
 *
@@ -35,12 +46,9 @@
 * o = iterationOrder( [ -2, -1 ] );
 * // returns -1
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function iterationOrder( strides: ArrayLike<number> ): number;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = iterationOrder;
