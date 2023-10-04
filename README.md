@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterationOrder from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-iteration-order@deno/mod.js';
+import iterationOrder from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-iteration-order@v0.1.1-deno/mod.js';
 ```
 
 #### iterationOrder( strides )
@@ -100,7 +100,7 @@ The function returns one of the following values:
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@deno/mod.js';
 import shape2strides from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-shape2strides@deno/mod.js';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import iterationOrder from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-iteration-order@deno/mod.js';
+import iterationOrder from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-iteration-order@v0.1.1-deno/mod.js';
 
 var strides;
 var shape;
