@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-iteration-order",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Given a stride array, determine array iteration order.",
   "license": "Apache-2.0",
   "author": {
@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@stdlib/types": "^0.1.0",
-    "@stdlib/utils-library-manifest": "^0.1.0"
+    "@stdlib/utils-library-manifest": "^0.1.1"
   },
   "devDependencies": {
     "@stdlib/assert-is-integer": "^0.1.0",
